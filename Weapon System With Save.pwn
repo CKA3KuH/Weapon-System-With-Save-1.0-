@@ -101,7 +101,7 @@ public OnPlayerConnect(playerid)
 {
 	if(fexist(WeaponPath(playerid)))
  	{
-  		INI_ParseFile(WeaponPath(playerid), "LoadUser_%s", .bExtra = true, .extra = playerid);
+  		INI_ParseFile(WeaponPath(playerid), "LoadUser_data", .bExtra = true, .extra = playerid);
     }
     else
     {
